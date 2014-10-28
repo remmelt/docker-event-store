@@ -24,7 +24,8 @@ RUN (wget -qO- http://download.geteventstore.com/binaries/$EVENT_STORE_VERSION.t
 
 WORKDIR $EVENT_STORE_DIR/$EVENT_STORE_VERSION
 
-RUN sed -i 's/##/#/' run-node.sh
+ADD run-node.sh $EVENT_STORE_DIR/$EVENT_STORE_VERSION/run-node.sh
+RUN chmod +x $EVENT_STORE_DIR/$EVENT_STORE_VERSION/run-node.sh
 
 VOLUME ["/db", "/logs"]
 EXPOSE 1113 2113
