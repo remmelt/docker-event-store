@@ -16,7 +16,7 @@ RUN apt-get update -qq \
 
 #Install the Event Store
 ENV EVENT_STORE_DIR /var/eventstore
-ENV EVENT_STORE_VERSION EventStore-OSS-Linux-v3.0.0
+ENV EVENT_STORE_VERSION EventStore-OSS-Linux-v3.0.1
 
 RUN mkdir -p $EVENT_STORE_DIR
 WORKDIR $EVENT_STORE_DIR
