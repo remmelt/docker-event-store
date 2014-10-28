@@ -5,10 +5,10 @@ A Docker image with the [Event Store](http://geteventstore.com/). Based on debia
 
 ##Usage
 ```
-docker run -dP remmelt/docker-eventstore:latest
+docker run -dP remmelt/docker-event-store:latest
 ```
 
-Any command line arguments can be passed with the `docker run` command (e.g. `docker run -dP remmelt/docker-eventstore:latest --use-internal-ssl=true`) or set in an environment variable (`docker run -dP -e "EVENTSTORE_USE_INTERNAL_SSL=true" remmelt/docker-eventstore:latest`)
+Any command line arguments can be passed with the `docker run` command (e.g. `docker run -dP remmelt/docker-event-store:latest --use-internal-ssl=true`) or set in an environment variable (`docker run -dP -e "EVENTSTORE_USE_INTERNAL_SSL=true" remmelt/docker-event-store:latest`)
 
 See [the Eventstore documentation](http://docs.geteventstore.com/introduction/command-line-arguments/) for possible arguments.
 
