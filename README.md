@@ -1,5 +1,4 @@
-Docker Event Store image
-==================
+#Docker Event Store image
 
 A Docker image with the [Event Store](http://geteventstore.com/). Based on debian:sid, this image is about 850MB.
 
